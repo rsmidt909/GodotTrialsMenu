@@ -1,0 +1,46 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://fire/fire08.png" type="Texture" id=1]
+[ext_resource path="res://fire/fire01.png" type="Texture" id=2]
+[ext_resource path="res://fire/fire02.png" type="Texture" id=3]
+[ext_resource path="res://fire/fire04.png" type="Texture" id=4]
+[ext_resource path="res://fire/fire06.png" type="Texture" id=5]
+[ext_resource path="res://fire/fire07.png" type="Texture" id=6]
+[ext_resource path="res://fire/fire09.png" type="Texture" id=7]
+[ext_resource path="res://fire/fire05.png" type="Texture" id=8]
+[ext_resource path="res://fire/fire10.png" type="Texture" id=9]
+[ext_resource path="res://fire/fire00.png" type="Texture" id=10]
+[ext_resource path="res://fire/fire03.png" type="Texture" id=11]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 10 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 11 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 1 ), ExtResource( 7 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "MenuFire",
+"speed": 7.0
+} ]
+
+[node name="TitleScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="VBoxContainer" parent="."]
+margin_left = 90.0
+margin_top = 80.0
+margin_right = 1208.0
+margin_bottom = 640.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Logo" type="TextureRect" parent="Menu"]
+margin_right = 1118.0
+
+[node name="Fire" type="AnimatedSprite" parent="Menu"]
+position = Vector2( 556.357, 312.341 )
+scale = Vector2( 0.176446, 0.176446 )
+frames = SubResource( 1 )
+animation = "MenuFire"
