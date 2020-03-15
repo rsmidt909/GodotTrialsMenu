@@ -1,17 +1,20 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://fire/fire09.png" type="Texture" id=1]
-[ext_resource path="res://fire/fire10.png" type="Texture" id=2]
-[ext_resource path="res://fire/fire07.png" type="Texture" id=3]
-[ext_resource path="res://fire/fire08.png" type="Texture" id=4]
-[ext_resource path="res://fire/fire00.png" type="Texture" id=5]
-[ext_resource path="res://fire/fire01.png" type="Texture" id=6]
-[ext_resource path="res://fire/fire03.png" type="Texture" id=7]
-[ext_resource path="res://fire/fire04.png" type="Texture" id=8]
-[ext_resource path="res://fire/fire05.png" type="Texture" id=9]
-[ext_resource path="res://fire/fire02.png" type="Texture" id=10]
-[ext_resource path="res://fire/fire06.png" type="Texture" id=11]
-[ext_resource path="res://ARCADECLASSIC.TTF" type="DynamicFontData" id=12]
+[ext_resource path="res://images/fire/fire09.png" type="Texture" id=1]
+[ext_resource path="res://images/fire/fire10.png" type="Texture" id=2]
+[ext_resource path="res://images/fire/fire07.png" type="Texture" id=3]
+[ext_resource path="res://images/fire/fire08.png" type="Texture" id=4]
+[ext_resource path="res://images/fire/fire00.png" type="Texture" id=5]
+[ext_resource path="res://images/fire/fire01.png" type="Texture" id=6]
+[ext_resource path="res://images/fire/fire03.png" type="Texture" id=7]
+[ext_resource path="res://images/fire/fire04.png" type="Texture" id=8]
+[ext_resource path="res://images/fire/fire05.png" type="Texture" id=9]
+[ext_resource path="res://images/fire/fire02.png" type="Texture" id=10]
+[ext_resource path="res://images/fire/fire06.png" type="Texture" id=11]
+[ext_resource path="res://images/NewGamePurple.png" type="Texture" id=12]
+[ext_resource path="res://images/ContinuePurple.png" type="Texture" id=13]
+[ext_resource path="res://images/NewGameWhite.png" type="Texture" id=14]
+[ext_resource path="res://images/ContinueWhite.png" type="Texture" id=15]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -21,17 +24,11 @@ animations = [ {
 "speed": 7.0
 } ]
 
-[sub_resource type="DynamicFont" id=2]
-size = 45
-font_data = ExtResource( 12 )
-
-[sub_resource type="DynamicFont" id=3]
-size = 45
-font_data = ExtResource( 12 )
-
 [node name="TitleScreen" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 1.67017
+margin_right = 1.67017
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -41,29 +38,27 @@ position = Vector2( 646.864, 365.261 )
 scale = Vector2( 0.349592, 0.349592 )
 frames = SubResource( 1 )
 animation = "MenuFire"
-frame = 8
+frame = 4
 playing = true
 
-[node name="New Game" type="Button" parent="."]
-margin_left = 200.0
+[node name="Continue" type="TextureButton" parent="."]
+margin_left = 898.33
 margin_top = 360.0
-margin_right = 393.0
-margin_bottom = 412.0
-custom_fonts/font = SubResource( 2 )
-text = "New Game"
-flat = true
+margin_right = 938.33
+margin_bottom = 400.0
+texture_normal = ExtResource( 15 )
+texture_hover = ExtResource( 13 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Continue" type="Button" parent="."]
-margin_left = 900.0
+[node name="New Game" type="TextureButton" parent="."]
+margin_left = 200.0
 margin_top = 360.0
-margin_right = 1112.0
-margin_bottom = 412.0
-custom_fonts/font = SubResource( 3 )
-text = "Continue"
-flat = true
+margin_right = 240.0
+margin_bottom = 400.0
+texture_normal = ExtResource( 14 )
+texture_hover = ExtResource( 12 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

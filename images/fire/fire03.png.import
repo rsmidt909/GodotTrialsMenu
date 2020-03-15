@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fire1.png-3f57b108fd22066793f671822cc3acc7.stex"
+path="res://.import/fire03.png-fab490c44cf9f159b7ca5c1717137e91.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Fire1.png"
-dest_files=[ "res://.import/Fire1.png-3f57b108fd22066793f671822cc3acc7.stex" ]
+source_file="res://images/fire/fire03.png"
+dest_files=[ "res://.import/fire03.png-fab490c44cf9f159b7ca5c1717137e91.stex" ]
 
 [params]
 

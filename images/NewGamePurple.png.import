@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fire09.png-ae9496b3dbf9ec606cd787d0510ba797.stex"
+path="res://.import/NewGamePurple.png-96129d575e37545576fba61cc0adc1db.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fire/fire09.png"
-dest_files=[ "res://.import/fire09.png-ae9496b3dbf9ec606cd787d0510ba797.stex" ]
+source_file="res://images/NewGamePurple.png"
+dest_files=[ "res://.import/NewGamePurple.png-96129d575e37545576fba61cc0adc1db.stex" ]
 
 [params]
 
